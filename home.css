@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 11rem 1.5rem 11rem;
+    background-color: #35424a;
+    border-bottom: 3px solid rgba(255, 64, 0, 0.907);
+}
+.head-name h1{
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+    font-style: normal; 
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+}
+.head-name-color {
+    color: rgba(255, 64, 0, 0.907);
+}
+.ham-menu-cont {
+    display: none;
+}
+.head-nav nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style-type: none;
+}
+.head-nav nav ul li {
+    list-style-type: none;
+    font-size: 21px;
+    color: white;
+    padding-top: 0.4rem;
+}
+.head-nav nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.head-nav nav ul .home a {
+    color: rgba(255, 64, 0, 0.842);
+}
+
+.head-nav nav ul .home a:hover {
+    color: white;
+}
+.responsive-head-nav{
+    display: none;
+}
+
+ /* Section-1 */
+ .sec-1{
+    background: linear-gradient(rgba(157, 157, 157, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./image/working-c.avif");
+    height: 58vh; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+ }
+ .sec-para-head h1{
+        padding-top:9rem;
+        font-size:55px;
+        color:white;
+ }
+ .sec-para-p p{
+    color:white;
+    font-size:21px;
+    padding:2rem 13rem 0rem 13rem;
+ }
+
+
+
+ /* Section-2 */
+ .sec-2{
+    display:flex;
+    justify-content: space-between;
+    padding:1.5rem 9rem 1.5rem 9rem;
+    background-color: #35424a;
+ }
+ .sec-head-heading h3{
+    font-size:25px;
+    color:white;
+    letter-spacing:1px;
+ }
+.sec-head-search form{
+    display: flex;
+    gap:.5rem;
+}
+.sec-head-input input{
+  padding:.5rem 2.5rem .5rem 2rem;
+}
+.sec-head-input input::placeholder{
+    font-size:14px;
+}
+.sec-head-button button{
+   padding:0.5rem 1.5rem;
+   background-color:rgba(255, 64, 0, 0.842);
+   color:white;
+   border:none;
+   font-size:15px;
+}
+
+   /* Section-3 */
+
+.sec-3{
+    display: flex;
+    gap:2rem;
+    margin:4rem 9rem 3rem 9rem;
+}
+.sec-lang{
+    align-items: center;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.sec-lang-icon img{
+    width:100px;
+    height:100px;
+}
+.sec-lang-head h2{
+    font-size:21px;
+}
+.sec-lang-para p{
+    font-size:17px;
+}
+
+
+/* footer section */
+.footer-sec{
+    padding:3rem;
+    text-align: center;
+    align-items: center;
+    background-color:rgba(255, 64, 0, 0.842);;
+}
+.footer-sec p{
+    font-size:19px;
+    color:white;
+}
+
+@media (max-width: 768px){
+    .head-section{
+        padding:1rem .5rem 1rem .5rem;
+        position: relative;
+    }
+    .head-name h1{
+        display: flex;
+        padding:.5rem .7rem;
+        gap:.3rem;
+        font-size:16px
+    }
+    .head-nav nav ul{
+        display: none;
+
+    }
+    .ham-menu-cont {
+       padding:.4rem 1.3rem 0rem 0rem;
+        display: block;
+        cursor: pointer;
+    }
+    .ham-menu-cont img {
+        width: 20px;
+        height: 20px;
+    }
+    .responsive-head-nav {
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height:19%; 
+        backdrop-filter: blur(8px);
+        background-color: rgba(53, 66, 74, 0.5);
+        display: none; 
+        z-index: 999; 
+    }
+    
+    /* Adjust the padding and other styles as needed */
+    .responsive-head-nav ul {
+        padding-top:.8rem;
+        list-style: none;
+    }
+    
+    .responsive-head-nav ul li {
+        margin-bottom: 1rem;
+    }
+    
+    .responsive-head-nav ul li a {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    
+/* 
+         Section-1 */
+      .sec-1{
+        max-width:100%;
+        max-height: auto;
+      }
+      .sec-para-head h1{
+        font-size:30px;
+        letter-spacing:1px;
+        margin:0rem 2rem;
+        padding-top:4.2rem;
+      }
+      .sec-para-p p{
+        font-size:16px;
+        padding:1rem 1.3rem .3rem 1.3rem;
+        margin:0rem 3rem;
+      }
+
+
+        /* section-2 */
+      .sec-2{
+        flex-direction:column;
+         padding:.3rem 1rem .5rem 1rem;
+      }
+      .sec-head-heading h3{
+        font-size:18px;
+        padding:1.3rem .4rem .5rem 1rem;
+      }
+      .sec-head-search form{
+        flex-direction: column;
+        gap:.5rem;
+      }
+      .sec-head-input input,
+      .sec-head-button button{
+        padding:.3rem .7rem;
+        margin-left:1.1rem;
+      }
+      .sec-head-button button{
+        margin-bottom:.5rem;
+        font-size:14px;
+      }
+
+         /* section-3 */
+      .sec-3{
+        flex-direction: column;
+        margin:3rem 1rem 2rem 1rem;
+      }
+      .sec-lang{
+        gap:.4rem;
+        padding-bottom:2rem;
+      }
+      .sec-lang-icon img{
+        width:50px;
+        height: 50px;
+      }
+      .sec-lang-head h2{
+        font-size:16px;
+      }
+      .sec-lang-para p{
+        font-size:15px;
+        margin:0rem 2rem;
+      }
+         
+          /* footer-sec */
+      .footer-sec{
+        padding:1.8rem;
+      }
+      .footer-sec p{
+          font-size:16px;
+      }
+}

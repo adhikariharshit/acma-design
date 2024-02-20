@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.head-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 11rem 1.5rem 11rem;
+    background-color: #35424a;
+    border-bottom: 3px solid rgba(255, 64, 0, 0.907);
+}
+.head-name h1{
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+    font-style: normal; 
+    font-size: 28px;
+    color: white;
+    letter-spacing: 2px;
+}
+.head-name-color {
+    color: rgba(255, 64, 0, 0.907);
+}
+.ham-menu-cont {
+    display: none;
+}
+.head-nav nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style-type: none;
+}
+.head-nav nav ul li {
+    list-style-type: none;
+    font-size: 21px;
+    color: white;
+    padding-top: 0.4rem;
+}
+.head-nav nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.head-nav nav ul .home a {
+    color: rgba(255, 64, 0, 0.842);
+}
+
+.head-nav nav ul .home a:hover {
+    color: white;
+}
+.responsive-head-nav{
+    display: none;
+}
+
+
+/* Section-2 */
+.sec-2{
+    display:flex;
+    justify-content: space-between;
+    padding:1.5rem 9rem 1.5rem 9rem;
+    background-color: #35424a;
+ }
+ .sec-head-heading h3{
+    font-size:25px;
+    color:white;
+    letter-spacing:1px;
+ }
+.sec-head-search form{
+    display: flex;
+    gap:.5rem;
+}
+.sec-head-input input{
+  padding:.5rem 2.5rem .5rem 2rem;
+}
+.sec-head-input input::placeholder{
+    font-size:14px;
+}
+.sec-head-button button{
+   padding:0.5rem 1.5rem;
+   background-color:rgba(255, 64, 0, 0.842);
+   color:white;
+   border:none;
+   font-size:15px;
+}
+
+/* section-3 */
+.services{
+    display: flex;
+    gap:3rem;
+    margin:4rem 0rem 3rem 5rem;
+}
+
+.services-text{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.service-head h3{
+    font-size:23px;
+    letter-spacing: 1px;
+}
+.services-para{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.service-p{
+    background-color: rgb(220, 220, 220);
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+    border:1px solid rgb(167, 166, 166);
+}
+.service-p-head h3{
+   font-size:17px;
+}
+.service-p-p p{
+    margin:0rem 1rem 0rem 0rem;
+    font-size:16px;
+}
+.service-p-s p{
+    font-size:15px;
+}
+.form-servies{
+    background-color:#35424a;
+    padding:2rem 2rem 1rem 1rem;
+    margin:1rem 0rem 10rem 1rem;
+}
+.form-servies{
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+}
+.form-servies h2{
+    color: white;
+    font-size:20px;
+    letter-spacing:1px;
+}
+.form-s form label{
+    font-size:16px;
+    padding-left: .1rem;
+    color:white;
+}
+.form-s form input{
+    margin-bottom:.4rem;
+    padding:.2rem 7rem .2rem .5rem ;
+}
+.form-s form textarea{
+    padding:.2rem 11.3rem .2rem .5rem ;
+}
+.form-s button{
+    padding:.5rem 1rem;
+    background-color:rgba(255, 64, 0, 0.842);
+    color:white;
+    font-size:16px;
+    border:none;
+}
+
+
+/* footer section */
+.footer-sec{
+    padding:3rem;
+    text-align: center;
+    align-items: center;
+    background-color:rgba(255, 64, 0, 0.842);
+}
+.footer-sec p{
+    font-size:19px;
+    color:white;
+}
+
+
+@media (max-width: 768px){
+    .head-section{
+        padding:1rem .5rem 1rem .5rem;
+        position: relative;
+    }
+    .head-name h1{
+        display: flex;
+        padding:.5rem .7rem;
+        gap:.3rem;
+        font-size:16px
+    }
+    .head-nav nav ul{
+        display: none;
+
+    }
+    .ham-menu-cont {
+       padding:.4rem 1.3rem 0rem 0rem;
+        display: block;
+        cursor: pointer;
+    }
+    .ham-menu-cont img {
+        width: 20px;
+        height: 20px;
+    }
+    .responsive-head-nav {
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height:19%; 
+        backdrop-filter: blur(8px);
+        background-color: rgba(53, 66, 74, 0.5);
+        display: none; 
+        z-index: 999; 
+    }
+    
+    /* Adjust the padding and other styles as needed */
+    .responsive-head-nav ul {
+        padding-top:.8rem;
+        list-style: none;
+    }
+    
+    .responsive-head-nav ul li {
+        margin-bottom: 1rem;
+    }
+    
+    .responsive-head-nav ul li a {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    
+
+
+
+        /* section-2 */
+      .sec-2{
+        flex-direction:column;
+         padding:.3rem 1rem .5rem 1rem;
+      }
+      .sec-head-heading h3{
+        font-size:18px;
+        padding:1.3rem .4rem .5rem 1rem;
+      }
+      .sec-head-search form{
+        flex-direction: column;
+        gap:.5rem;
+      }
+      .sec-head-input input,
+      .sec-head-button button{
+        padding:.3rem .7rem;
+        margin-left:1.1rem;
+      }
+      .sec-head-button button{
+        margin-bottom:.5rem;
+        font-size:14px;
+      }
+      
+       /* service */
+       .services{
+        flex-direction: column;
+        margin:1rem 1rem 0rem 1rem;
+       }
+       .service-head h3{
+          padding-left:1rem;
+       }
+       .services-para{
+        font-size:15px;
+       }
+       .form-servies{
+        margin:1rem 1rem 4rem 1rem;
+      }
+      .form-s form input{
+        padding:.2rem 6.1rem .2rem .5rem ;
+    }
+      .form-s button{
+        padding: .4rem .8rem;
+      }
+
+
+         
+          /* footer-sec */
+      .footer-sec{
+        padding:1.8rem;
+      }
+      .footer-sec p{
+          font-size:16px;
+      }
+}
